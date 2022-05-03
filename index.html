@@ -1,24 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="custom/custom.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="custom/custom.css">
 
-  <title>Frontend Mentor | Tip calculator app</title>
+    <title>Frontend Mentor | Tip calculator app</title>
 
 </head>
 
-<body>
+<body class="container">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Pablo Muñoz</a>.
-  </div>
+    <h1 class="title">SPLI<br>TTER</h1>
+
+    <main>
+
+        <div class="row">
+
+            <div class="col-12 col1">
+
+                <div class="col1-bill">
+                    <p>Bill</p>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text">$</span>
+                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+                <div class="col1-tip">
+                    <p>Select Tip %</p>
+                    <div class="row">
+
+                        <div class="col-6 col-lg-4">
+                            <input type="radio" class="btn-check" id="btn-check-5" autocomplete="off" value="5"
+                                name="tips">
+                            <label class="btn btn-primary w-100" for="btn-check-5">5%</label>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <input type="radio" class="btn-check" id="btn-check-10" autocomplete="off" value="10"
+                                name="tips">
+                            <label class="btn btn-primary w-100" for="btn-check-10">10%</label>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <input type="radio" class="btn-check" id="btn-check-15" autocomplete="off" value="15"
+                                name="tips">
+                            <label class="btn btn-primary w-100" for="btn-check-15">15%</label>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <input type="radio" class="btn-check" id="btn-check-25" autocomplete="off" value="25"
+                                name="tips">
+                            <label class="btn btn-primary w-100" for="btn-check-25">25%</label>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <input type="radio" class="btn-check" id="btn-check-50" autocomplete="off" value="50"
+                                name="tips">
+                            <label class="btn btn-primary w-100" for="btn-check-50">50%</label>
+                        </div>
+
+                        <div class="col-6 col-lg-4">
+                            <input type="radio" class="btn-check" id="btn-check-input" autocomplete="off" name="tips">
+                            <label for="btn-check-input" class="bg-transparent"><input type="number" class="input-tip"
+                                    id="input-tip" autocomplete="off" placeholder="Custom"></label>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col1-people">
+                    <p>Number of People</p>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg></span>
+                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-12 col2">
+
+                <div class="bg-primary col2-caja">
+                    <div class="col2-amount d-flex justify-content-between align-items-center">
+                        <div class="text-white col2-caja-text">
+                            <p class="m-0">Tip Amount</p>
+                            <p>/ person</p>
+                        </div>
+                        <p class="text-verde amount-price">$<span>0.00</span></p>
+                    </div>
+                    <div class="col2-total d-flex justify-content-between align-items-center">
+                        <div class="text-white col2-caja-text">
+                            <p class="m-0">Total</p>
+                            <p>/ person</p>
+                        </div>
+                        <p class="text-verde amount-price">$<span>0.00</span></p>
+                    </div>
+
+
+                    <button class="btn col2-btn">RESET</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+    <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Pablo Muñoz</a>.
+    </div> -->
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

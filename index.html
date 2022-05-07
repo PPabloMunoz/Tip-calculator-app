@@ -21,13 +21,14 @@
 
         <div class="row">
 
-            <div class="col-12 col1">
+            <div class="col-12 col-lg-6 col1">
 
                 <div class="col1-bill">
                     <p>Bill</p>
                     <div class="input-group mb-4">
                         <span class="input-group-text">$</span>
-                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <input type="number" class="form-control" id="input-bill"
+                            aria-label="Amount (to the nearest dollar)">
                     </div>
                 </div>
                 <div class="col1-tip">
@@ -36,7 +37,7 @@
 
                         <div class="col-6 col-lg-4">
                             <input type="radio" class="btn-check" id="btn-check-5" autocomplete="off" value="5"
-                                name="tips">
+                                name="tips" checked="true">
                             <label class="btn btn-primary w-100" for="btn-check-5">5%</label>
                         </div>
 
@@ -84,7 +85,8 @@
                                 fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg></span>
-                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <input type="number" class="form-control" id="input-people"
+                            aria-label="Amount (to the nearest dollar)">
                     </div>
 
                 </div>
@@ -93,7 +95,7 @@
 
 
 
-            <div class="col-12 col2">
+            <div class="col-12 col-lg-6 col2">
 
                 <div class="bg-primary col2-caja">
                     <div class="col2-amount d-flex justify-content-between align-items-center">
@@ -128,8 +130,8 @@
 
 
 
-
-    <!-- <div class="attribution">
+    <!--
+    <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Pablo Muñoz</a>.
     </div> -->

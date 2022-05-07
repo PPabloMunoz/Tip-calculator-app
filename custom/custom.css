@@ -12109,26 +12109,14 @@ main {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-color: #fff;
   border-radius: 20px;
 }
 
 .col1 {
-  width: 100%;
   padding: 45px;
   padding-bottom: 0;
 }
@@ -12285,6 +12273,7 @@ main {
 }
 
 .col2 {
+  height: 100%;
   padding: 45px;
   padding-top: 0;
 }
@@ -12315,4 +12304,19 @@ main {
 .col2-btn:hover {
   background-color: #9fe8df;
   color: #00494d;
+}
+
+@media (min-width: 992px) {
+  .row {
+    padding: 30px;
+  }
+
+  .col1 {
+    padding: 0;
+  }
+
+  .col2 {
+    padding: 0;
+    height: 100%;
+  }
 }

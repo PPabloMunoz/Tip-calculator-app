@@ -12158,6 +12158,10 @@ main {
   background-color: transparent;
 }
 
+.form-control:invalid {
+  border: 1px solid #ff0000;
+}
+
 .col1-tip {
   margin-bottom: 5px;
 }
@@ -12283,7 +12287,7 @@ main {
   padding: 30px;
 }
 
-.amount-price {
+.amount-price-tip, .amount-price-total {
   font-size: 30px;
   font-weight: 700;
   text-align: right;

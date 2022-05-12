@@ -86,7 +86,7 @@
                                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg></span>
                         <input type="number" class="form-control" id="input-people"
-                            aria-label="Amount (to the nearest dollar)">
+                            aria-label="Amount (to the nearest dollar)" min="1" value="1">
                     </div>
 
                 </div>
@@ -103,18 +103,18 @@
                             <p class="m-0">Tip Amount</p>
                             <p>/ person</p>
                         </div>
-                        <p class="text-verde amount-price">$<span>0.00</span></p>
+                        <p class="text-verde amount-price-tip" id="amount-price-tip">$0.00</p>
                     </div>
                     <div class="col2-total d-flex justify-content-between align-items-center">
                         <div class="text-white col2-caja-text">
                             <p class="m-0">Total</p>
                             <p>/ person</p>
                         </div>
-                        <p class="text-verde amount-price">$<span>0.00</span></p>
+                        <p class="text-verde amount-price-total" id="amount-price-total">$0.00</p>
                     </div>
 
 
-                    <button class="btn col2-btn">RESET</button>
+                    <button class="btn col2-btn" id="btn-reset">RESET</button>
                 </div>
 
 
